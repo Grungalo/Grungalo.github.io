@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"name": "Grungalo.github.io",
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Grungalo.github.io"
+	}
+}

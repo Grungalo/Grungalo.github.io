@@ -1,0 +1,242 @@
+body{
+    background-color: rgb(18, 1, 41);
+}
+
+.intro{
+    font-style: bold;
+    font-size: 120%;
+
+}
+
+video{
+    width: 100%;
+    height: auto;
+    max-width: fit-content;
+}
+
+.video{
+    opacity: 0.8;
+    text-align: center;
+    position: relative;
+    z-index: -1;
+    padding-bottom: 20px;
+}
+
+.videoHeader{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    color: white;
+    z-index: 0;
+}
+
+h1{
+    font-size: 45px;
+}
+h2{
+    font-size: 35px;
+    padding: 10px;
+}
+h3{
+    font-size: 28px;
+    text-decoration: underline;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+.pageContent{
+    color: white;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 20px;
+    border: 1px solid rgb(160, 159, 159);
+}
+
+div{
+    padding: 10px;
+}
+
+.spacer{
+    padding: 50px;
+}
+
+button{
+    width: auto;
+    height: auto;
+    font-size: 17px;
+}
+
+button a:hover{
+    color: red;
+}
+
+footer{
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid rgb(50, 9, 146);
+    background-color: rgb(39, 11, 68);
+    color: white;
+}
+
+p{
+    font-size: 18px;
+}
+
+ul{
+    font-size: 18px;
+}
+
+.mtkSection{
+    border: 1px solid grey;
+}
+
+.galleryGrid1{
+    display: grid;
+    grid-template-areas:
+        "firstchild secondchild"
+        "thirdchild fourthchild"
+        "fifthchild sixthchild"
+        "seventhchild eighthchild"
+    ;
+    grid-gap: 20px;
+    padding: 10px;
+}
+
+.galleryGrid1 div{
+    text-align: center;
+    padding: 20px;
+}
+
+
+.galleryGrid1 img{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.galleryGrid1 div:nth-child(1){
+    grid-area: firstchild;
+}
+.galleryGrid1 div:nth-child(2){
+    grid-area: secondchild;
+}
+.galleryGrid1 div:nth-child(3){
+    grid-area: thirdchild;
+}
+.galleryGrid1 div:nth-child(4){
+    grid-area: fourthchild;
+}
+.galleryGrid1 div:nth-child(5){
+    grid-area: fifthchild;
+}
+.galleryGrid1 div:nth-child(6){
+    grid-area: sixthchild;
+}
+.galleryGrid1 div:nth-child(7){
+    grid-area: seventhchild;
+}
+.galleryGrid1 div:nth-child(8){
+    grid-area: eighthchild;
+}
+
+.bedroomSection{
+    border: 1px solid grey;
+}
+
+.galleryGrid2{
+    display: grid;
+    grid-template-areas:
+        "firstchild secondchild"
+        "thirdchild fourthchild"
+    ;
+    grid-gap: 20px;
+    padding: 10px;
+}
+
+.galleryGrid2 div{
+    text-align: center;
+    padding: 20px;
+}
+
+
+.galleryGrid2 img{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.galleryGrid2 div:nth-child(1){
+    grid-area: firstchild;
+}
+.galleryGrid2 div:nth-child(2){
+    grid-area: secondchild;
+}
+.galleryGrid2 div:nth-child(3){
+    grid-area: thirdchild;
+}
+.galleryGrid2 div:nth-child(4){
+    grid-area: fourthchild;
+}
+
+@media only screen and (max-width: 580px){
+    /* These styles will apply from 0px to 580px */
+    h1{
+        font-size: 35px;
+    }
+    h2{
+        font-size: 25px;
+    }
+    h3{
+        font-size: 22px;
+    }
+
+    .intro{
+        font-style: bold;
+        font-size: 16px;
+        
+    }
+
+    .pageContent{
+        color: white;
+        margin-left: 5%;
+        margin-right: 5%;
+        padding: 10%;
+        border: 1px solid rgb(160, 159, 159);
+        margin-bottom: 20px;
+    }
+
+    .galleryGrid1{
+        display: grid;
+        grid-template-areas:
+            "firstchild"
+            "secondchild"
+            "thirdchild"
+            "fourthchild"
+            "fifthchild"
+            "sixthchild"
+            "seventhchild"
+            "eighthchild"
+        ;
+        grid-gap: 20px;
+        padding: 10px;
+    }
+
+    .galleryGrid2{
+        display: grid;
+        grid-template-areas:
+            "firstchild"
+            "secondchild"
+            "thirdchild"
+            "fourthchild"
+        ;
+        grid-gap: 20px;
+        padding: 10px;
+    }
+}
