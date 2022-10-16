@@ -185,6 +185,45 @@ ul{
     grid-area: fourthchild;
 }
 
+.untitledProjectSection{
+    border: 1px solid grey;
+}
+
+.galleryGrid3{
+    display: grid;
+    grid-template-areas:
+        "firstchild secondchild"
+        "thirdchild fourthchild"
+    ;
+    grid-gap: 20px;
+    padding: 10px;
+}
+
+.galleryGrid3 div{
+    text-align: center;
+    padding: 20px;
+}
+
+
+.galleryGrid3 img{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.galleryGrid3 div:nth-child(1){
+    grid-area: firstchild;
+}
+.galleryGrid3 div:nth-child(2){
+    grid-area: secondchild;
+}
+.galleryGrid3 div:nth-child(3){
+    grid-area: thirdchild;
+}
+.galleryGrid3 div:nth-child(4){
+    grid-area: fourthchild;
+}
+
 @media only screen and (max-width: 580px){
     /* These styles will apply from 0px to 580px */
     h1{
@@ -235,6 +274,19 @@ ul{
             "secondchild"
             "thirdchild"
             "fourthchild"
+        ;
+        grid-gap: 20px;
+        padding: 10px;
+    }
+
+    .galleryGrid3{
+        display: grid;
+        grid-template-areas:
+            "firstchild"
+            "secondchild"
+            "thirdchild"
+            "fourthchild"
+            "fifthchild"
         ;
         grid-gap: 20px;
         padding: 10px;
